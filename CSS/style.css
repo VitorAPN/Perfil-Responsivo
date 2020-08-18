@@ -1,7 +1,23 @@
 body{
     background-color: white;
     font-family: Arial;
+    display: flex;
+    flex-flow: row wrap;
 }
+
+#profile{
+    order: 1;
+    background-color: #487345;
+    width: 30%;
+    height: auto;
+}
+
+#bio{
+    order: 2;
+    width: 70%;
+    height: auto;
+}
+
 .information{
     font-size: 2em;
 }
@@ -11,7 +27,9 @@ img{
 }
 
 #profile_picture{
-    width: 20%;
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
     border-radius: 50%;
 }
 
