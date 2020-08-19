@@ -1,21 +1,25 @@
 body{
     background-color: white;
     font-family: Arial;
-    display: flex;
-    flex-flow: row wrap;
+    
+}
+#content{
+   justify-content: space-between;
+   display: flex;
+   flex-flow: row wrap; 
 }
 
 #profile{
+    width: 20%;
+    flex: 1;
     order: 1;
     background-color: #487345;
-    width: 30%;
-    height: auto;
 }
 
 #bio{
+    width: 50%;
+    flex: 2;
     order: 2;
-    width: 70%;
-    height: auto;
 }
 
 .information{
