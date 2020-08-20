@@ -16,8 +16,13 @@ img{
     grid-template-areas: "left right right right";
 }
 
-#profile{
+#name{
+    font-size: 3em;
+}
 
+#profile{
+    display: block;
+    text-align: left;
     color: white;
     border-radius: 1%;
     padding: 3%;
@@ -35,6 +40,16 @@ img{
     box-shadow: 4px 4px 2px grey;
 }
 
+progress{
+    width: 90%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.line{
+    border-top: 0.1% solid red;
+}
+
 p{
     font-size: 1em;
 }
@@ -44,11 +59,13 @@ p{
 }
 
 #profile_picture{
-    display: block;
     margin-right: auto;
     margin-right: auto;
     width: 50%;
     border-radius: 50%;
+}
+.habilities{
+    font-size: 1.5em;
 }
 
 .social_media{
