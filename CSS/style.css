@@ -1,6 +1,6 @@
 body{
-    background-color: white;
-    font-family: Arial;  
+    font-family: Arial;
+    background-color: #c9cac8;
 }
 
 img{
@@ -8,19 +8,35 @@ img{
 }
 
 .grid-container{
+    margin: 1%;
     display: grid;
-    grid-template-columns: 1fr, 3fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "left right"; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1%;
+    grid-auto-rows: 100%;
+    grid-template-areas: "left right right right";
 }
 
 #profile{
+
+    color: white;
+    border-radius: 1%;
+    padding: 3%;
     background-color: #487345;
     grid-area: left;
+    box-shadow: 4px 4px 2px grey;
 }
 
 #bio{
+
+    border-radius: 1%;
+    padding: 5%;
     grid-area: right;
+    background-color: white;
+    box-shadow: 4px 4px 2px grey;
+}
+
+p{
+    font-size: 1em;
 }
 
 .information{
@@ -28,12 +44,13 @@ img{
 }
 
 #profile_picture{
-    width: 70%;
-    margin-left:15%;
-    margin-right:15%;
+    display: block;
+    margin-right: auto;
+    margin-right: auto;
+    width: 50%;
     border-radius: 50%;
 }
 
 .social_media{
-    width: 5%;
+    width: 20%;
 }
