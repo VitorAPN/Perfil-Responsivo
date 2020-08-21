@@ -12,7 +12,7 @@ img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1%;
-    grid-auto-rows: 100%;
+    grid-auto-rows: auto;
     grid-template-areas: "left right right right";
 }
 
@@ -47,11 +47,24 @@ progress{
 }
 
 .line{
-    border-top: 0.1% solid red;
+    border: 1px solid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-color: #c9cac8;
 }
 
 p{
     font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: #dbd3d3;
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+a:hover{
+    color: rgb(175, 175, 175);
 }
 
 .information{
@@ -59,9 +72,11 @@ p{
 }
 
 #profile_picture{
-    margin-right: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-top: 7%;
+    border: 0.2em solid;
+    border-color: white;
+    margin-left: 7%;
+    width: 60%;
     border-radius: 50%;
 }
 .habilities{
@@ -70,4 +85,5 @@ p{
 
 .social_media{
     width: 20%;
+    margin-left: 2%;
 }
