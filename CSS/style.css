@@ -17,18 +17,18 @@ img{
 }
 
 #name{
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #profile{
     display: block;
     text-align: left;
-    color: white;
+    color: #333333;
     border-radius: 1%;
     padding: 3%;
-    background-color: #487345;
+    background-color: #767775;
     grid-area: left;
-    box-shadow: 4px 4px 2px grey;
+    box-shadow: 4px 4px 2px #464444;
 }
 
 #bio{
@@ -37,11 +37,12 @@ img{
     padding: 5%;
     grid-area: right;
     background-color: white;
-    box-shadow: 4px 4px 2px grey;
+    box-shadow: 4px 4px 2px #464444;
 }
 
 progress{
     width: 90%;
+    height: 3%;
     margin-right: 10%;
     margin-bottom: 5%;
 }
@@ -69,18 +70,19 @@ a:hover{
 
 .information{
     font-size: 2em;
+    color: #333333;
 }
 
 #profile_picture{
     margin-top: 7%;
-    border: 0.2em solid;
-    border-color: white;
+    border: 0.3em solid;
+    border-color: #333333;
     margin-left: 7%;
-    width: 60%;
+    width: 70%;
     border-radius: 50%;
 }
 .habilities{
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .social_media{
@@ -104,3 +106,7 @@ li{
         ;
     }
 }
+
+/* Coisas para melhorar
+    -Fontes diferentes
+*/
