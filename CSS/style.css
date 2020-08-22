@@ -87,3 +87,20 @@ a:hover{
     width: 20%;
     margin-left: 2%;
 }
+
+li{
+    margin-bottom: 2%;
+}
+
+@media(max-width: 500px){
+    .grid-container{
+        margin: 1%;
+        display: grid;
+        grid-template-rows: 1fr, 1fr;
+        grid-auto-columns: 1fr;
+        grid-template-areas: 
+        "left"
+        "right"
+        ;
+    }
+}
