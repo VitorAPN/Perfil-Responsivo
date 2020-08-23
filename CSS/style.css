@@ -12,7 +12,7 @@ img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1%;
-    grid-auto-rows: auto;
+    grid-auto-rows: minmax(100%, auto);
     grid-template-areas: "left right right right";
 }
 
@@ -41,10 +41,16 @@ img{
 }
 
 progress{
+    -webkit-appearance: none;
+    appearance: none;
     width: 90%;
     height: 3%;
     margin-right: 10%;
     margin-bottom: 5%;
+}
+progress ::-webkit-progress-bar{
+    width: 90%;
+    height: 3%;
 }
 
 .line{
@@ -65,7 +71,7 @@ a{
     margin-left: 5%;
 }
 a:hover{
-    color: rgb(175, 175, 175);
+    color: #afafaf;
 }
 
 .information{
@@ -94,7 +100,7 @@ li{
     margin-bottom: 2%;
 }
 
-@media(max-width: 500px){
+/*@media(max-width: 500px){
     .grid-container{
         margin: 1%;
         display: grid;
@@ -106,6 +112,7 @@ li{
         ;
     }
 }
+*/
 
 /* Coisas para melhorar
     -Fontes diferentes
