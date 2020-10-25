@@ -19,6 +19,7 @@ img{
     margin: 1%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:1fr;
     grid-column-gap: 1%;
     grid-auto-rows: minmax(100%, auto);
     grid-template-areas: "left right right right";
@@ -55,11 +56,22 @@ progress{
     height: 3%;
     margin-right: 10%;
     margin-bottom: 5%;
+    color:#dbd3d3;
+    background-color: #333333;
+    border: none;
+    border-radius: 2%;
+    &::-webkit-progress-bar {
+        
+        width: 90%;
+        height: 3%;
+        background: #333333;
+
+    }
+    &::-webkit-progress-value{
+        background: #333333;
+    }
 }
-progress ::-webkit-progress-bar{
-    width: 90%;
-    height: 3%;
-}
+
 
 .line{
     border: 1px solid;
@@ -109,20 +121,16 @@ li{
     margin-bottom: 2%;
 }
 
-/*@media(max-width: 500px){
+@media only screen and (max-width: 500px){
     .grid-container{
         margin: 1%;
         display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr, 1fr;
-        grid-auto-columns: 1fr;
+        grid-row-gap: 1%;
         grid-template-areas: 
         "left"
         "right"
         ;
     }
 }
-*/
-
-/* Coisas para melhorar
-    -Fontes diferentes
-*/
