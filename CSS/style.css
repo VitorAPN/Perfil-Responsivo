@@ -22,7 +22,7 @@ img{
     grid-template-rows:1fr;
     grid-column-gap: 1%;
     grid-auto-rows: minmax(100%, auto);
-    grid-template-areas: "left right right right";
+    grid-template-areas: "profile bio bio bio";
 }
 
 #name{
@@ -36,7 +36,7 @@ img{
     border-radius: 1%;
     padding: 3%;
     background-color: #767775;
-    grid-area: left;
+    grid-area: profile;
     box-shadow: 4px 4px 2px #464444;
 }
 
@@ -44,7 +44,7 @@ img{
 
     border-radius: 1%;
     padding: 5%;
-    grid-area: right;
+    grid-area: bio;
     background-color: white;
     box-shadow: 4px 4px 2px #464444;
 }
@@ -84,13 +84,13 @@ p{
     font-size: 1.2em;
 }
 
-a{
+address a{
     text-decoration: none;
     color: #dbd3d3;
     font-size: 1.5em;
     margin-left: 5%;
 }
-a:hover{
+address a:hover{
     color: #afafaf;
 }
 
@@ -129,8 +129,8 @@ li{
         grid-template-rows: 1fr, 1fr;
         grid-row-gap: 1%;
         grid-template-areas: 
-        "left"
-        "right"
+        "profile"
+        "bio"
         ;
     }
 }
