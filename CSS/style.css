@@ -11,7 +11,6 @@ body{
     background-color: #c9cac8;
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
 
 img{
@@ -22,13 +21,10 @@ img{
     margin: 0.5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows:1fr;
+    grid-template-rows: 1fr;
     column-gap: 1%;
-    grid-template-areas: "profile bio bio bio";
-}
-
-#name{
-    font-size: 2em;
+    grid-template-areas: 
+    "profile bio bio bio";
 }
 
 #profile{
@@ -49,6 +45,15 @@ img{
     box-shadow: 4px 4px 2px #464444;
 }
 
+#name{
+    font-size: clamp(25px, 3vw, 35px);
+    margin-bottom: 2%;
+}
+
+.title{
+    font-size: clamp(20px, 3vw, 30px);
+}
+
 progress{
     -webkit-appearance: none;
     appearance: none;
@@ -59,7 +64,7 @@ progress{
     color: #afafaf;
     background-color: #333333;
     border: none;
-    border-radius: 2%;
+    border-radius: 2px;
 }
 progress::-webkit-progress-bar {
     background-color: #333333;
@@ -71,9 +76,6 @@ progress::-moz-progress-bar {
     background-color: #afafaf;
 }
 
-
-
-
 .line{
     border: 1px solid;
     margin-top: 5%;
@@ -82,13 +84,13 @@ progress::-moz-progress-bar {
 }
 
 p{
-    font-size: 1.2em;
+    font-size: clamp(18px, 1.4vw, 22px);
 }
 
 address a{
     text-decoration: none;
     color: #dbd3d3;
-    font-size: 1.5em;
+    font-size: clamp(18px, 1.8vw, 26px);
     margin-left: 5%;
 }
 address a:hover{
@@ -96,7 +98,8 @@ address a:hover{
 }
 
 .information{
-    font-size: 2em;
+    font-size: clamp(20px, 3vw, 30px);
+    margin-bottom: 2%;
     color: #333333;
 }
 
@@ -104,22 +107,23 @@ address a:hover{
     margin-top: 2%;
     border: 3px solid;
     border-color: #333333;
-    margin-left: 7%;
-    width: 70%;
+    margin-left: 12%;
+    width: 65%;
     height:auto;
     border-radius: 50%;
 }
 .habilities{
-    font-size: 1.2em;
+    font-size: clamp(15px, 1.4vw, 25px);
 }
 
 .social_media{
     width: 20%;
     margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 li{
-    font-size: 1.2em;
+    font-size: clamp(18px, 1.4vw, 22px);
     margin-bottom: 2%;
 }
 
@@ -128,9 +132,10 @@ li{
         margin: 1%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr,1fr;
+        grid-template-rows: 1fr,1fr,1fr;
         grid-gap: 1%;
         grid-template-areas: 
+        "profile"
         "profile"
         "bio"
         ;
