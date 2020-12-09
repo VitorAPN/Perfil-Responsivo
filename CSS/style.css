@@ -56,22 +56,22 @@ progress{
     height: 3%;
     margin-right: 10%;
     margin-bottom: 5%;
-    color:#dbd3d3;
+    color: #afafaf;
     background-color: #333333;
     border: none;
     border-radius: 2%;
-    &::-webkit-progress-bar {
-        
-        width: 90%;
-        height: 3%;
-        background: #333333;
-        color:#dbd3d3;
-
-    }
-    &::-webkit-progress-value{
-        background: #333333;
-    }
 }
+progress::-webkit-progress-bar {
+    background-color: #333333;
+}
+progress::-webkit-progress-value{
+    background-color: #afafaf;
+}
+progress::-moz-progress-bar {
+    background-color: #afafaf;
+}
+
+
 
 
 .line{
